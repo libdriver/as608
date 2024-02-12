@@ -1,6 +1,6 @@
 /**
  * @mainpage  LibDriver AS608
- * @brief     libdriver as608 is a full function driver of as608 and it can run in both MCU and Linux platform.
+ * @brief     LibDriver AS608 is a full function driver of AS608 and it can run in both MCU and Linux platform.
  * @version   1.0.0
  * @author    Shifeng Li
  *
