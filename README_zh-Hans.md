@@ -46,7 +46,7 @@ LibDriver AS608是LibDriver推出的AS608全功能驱动，该驱动提供指纹
 
 参考/interface目录下与平台无关的UART模板，完成指定平台的UART驱动。
 
-将/src目录，/interface目录和/example目录加入工程。
+将/src目录，您使用平台的接口驱动和您开发的驱动加入工程，如果您想要使用默认的范例驱动，可以将/example目录加入您的工程。
 
 ### 使用
 
