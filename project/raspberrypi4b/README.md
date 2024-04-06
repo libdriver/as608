@@ -264,8 +264,8 @@ as608: min temperature is -40.0C.
 ```shell
 ./as608 -p
 
-as608: TX connected to GPIO14(BCM).
-as608: RX connected to GPIO15(BCM).
+as608: TX connected to GPIO15(BCM).
+as608: RX connected to GPIO14(BCM).
 ```
 
 ```shell
