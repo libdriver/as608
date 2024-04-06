@@ -1443,8 +1443,8 @@ uint8_t as608(uint8_t argc, char **argv)
     else if (strcmp("p", type) == 0)
     {
         /* print pin connection */
-        as608_interface_debug_print("as608: TX connected to GPIO14(BCM).\n");
-        as608_interface_debug_print("as608: RX connected to GPIO15(BCM).\n");
+        as608_interface_debug_print("as608: TX connected to GPIO15(BCM).\n");
+        as608_interface_debug_print("as608: RX connected to GPIO14(BCM).\n");
 
         return 0;
     }
