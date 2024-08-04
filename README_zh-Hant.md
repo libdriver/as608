@@ -8,7 +8,7 @@
 
 [![MISRA](https://img.shields.io/badge/misra-compliant-brightgreen.svg)](/misra/README.md) [![API](https://img.shields.io/badge/api-reference-blue.svg)](https://www.libdriver.com/docs/as608/index.html) [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](/LICENSE)
 
-AS608是一個指紋掃描儀和讀取器模塊，但它的功能遠不止於指紋注册、圖像處理、列印匹配等等。 它處理數據並發送處理後的數據通過串列傳輸到微控制器。 該設備使用DSP晶片進行圖像處理渲染、特徵查找、計算和蒐索。 它有一個內寘的閃存，可以存儲指紋的數據，並注册新的–最多可以存儲162個指紋。 它與控制器或具有TTL串列的任何其他系統，並發送數據包來拍照，檢測列印、雜湊和蒐索。 該設備具有紅色和綠色LED指示燈，用於錯誤和正確的印刷品。
+AS608是一個指紋掃描儀和讀取器模塊，但它的功能遠不止指紋注册、圖像處理、列印匹配等。 它處理數據並通過串口發送處理後的數據到微控制器。 該設備使用DSP晶片進行圖像處理渲染、特徵查找、計算和蒐索。 它有一個內寘的閃存，可以存儲指紋的數據，它最多可以存儲162個指紋。 它可以與控制器或具有TTL串列的任何其他系統通信，提供數据包拍照輸出，檢測列印、雜湊和蒐索等功能。 該設備具有紅色和綠色LED指示燈，可用於錯誤和正確的列印。
 
 LibDriver AS608是LibDriver推出的AS608全功能驅動，該驅動提供指紋錄入、指紋驗證等功能並且它符合MISRA標準。
 
