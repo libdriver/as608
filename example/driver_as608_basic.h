@@ -71,7 +71,7 @@ extern "C"{
 
 /**
  * @brief     basic example init
- * @param[in] addr is the chip address
+ * @param[in] addr chip address
  * @return    status code
  *            - 0 success
  *            - 1 init failed
@@ -90,7 +90,7 @@ uint8_t as608_basic_deinit(void);
 
 /**
  * @brief     basic example print status
- * @param[in] status is the print status
+ * @param[in] status print status
  * @return    status code
  *             - 0 success
  *             - 1 print failed
@@ -100,10 +100,10 @@ uint8_t as608_basic_print_status(as608_status_t status);
 
 /**
  * @brief      basic example input fingerprint
- * @param[out] *callback points to a callback function
- * @param[out] *score points to a score buffer
- * @param[out] *page_number points to a page number buffer
- * @param[out] *status points to a status buffer
+ * @param[out] *callback pointer to a callback function
+ * @param[out] *score pointer to a score buffer
+ * @param[out] *page_number pointer to a page number buffer
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 input fingerprint failed
@@ -121,9 +121,9 @@ uint8_t as608_basic_input_fingerprint(void (*callback)(int8_t status, const char
 
 /**
  * @brief      basic example verify
- * @param[out] *found_page points to a found page buffer
- * @param[out] *score points to a score buffer
- * @param[out] *status points to a status buffer
+ * @param[out] *found_page pointer to a found page buffer
+ * @param[out] *score pointer to a score buffer
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 verify failed
@@ -133,9 +133,9 @@ uint8_t as608_basic_verify(uint16_t *found_page, uint16_t *score, as608_status_t
 
 /**
  * @brief      basic example high speed verify
- * @param[out] *found_page points to a found page buffer
- * @param[out] *score points to a score buffer
- * @param[out] *status points to a status buffer
+ * @param[out] *found_page pointer to a found page buffer
+ * @param[out] *score pointer to a score buffer
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 high speed verify failed
@@ -145,8 +145,8 @@ uint8_t as608_basic_high_speed_verify(uint16_t *found_page, uint16_t *score, as6
 
 /**
  * @brief      basic example delete fingerprint
- * @param[in]  page_number is the page number
- * @param[out] *status points to a status buffer
+ * @param[in]  page_number page number
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 delete fingerprint failed
@@ -156,7 +156,7 @@ uint8_t as608_basic_delete_fingerprint(uint16_t page_number, as608_status_t *sta
 
 /**
  * @brief      basic example empty fingerprint
- * @param[out] *status points to a status buffer
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 empty fingerprint failed

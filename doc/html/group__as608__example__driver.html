@@ -600,8 +600,8 @@ Functions</h2></td></tr>
 <p>advance example delete fingerprint </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>is the page number </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>page number </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -657,10 +657,10 @@ Functions</h2></td></tr>
 <p>advance example download flash feature </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>is the page number </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*input_buffer</td><td>points to an input buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">input_len</td><td>is the input length </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>page number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*input_buffer</td><td>pointer to an input buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">input_len</td><td>input length </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -716,10 +716,10 @@ Functions</h2></td></tr>
 <p>advance example download image </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>is the page number </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*input_buffer</td><td>points to an input buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">input_len</td><td>is the input length </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>page number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*input_buffer</td><td>pointer to an input buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">input_len</td><td>input length </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -753,7 +753,7 @@ Functions</h2></td></tr>
 <p>advance example empty fingerprint </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -797,8 +797,8 @@ Functions</h2></td></tr>
 <p>advance example enroll </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*page_number</td><td>points to a page number buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*page_number</td><td>pointer to a page number buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -848,9 +848,9 @@ Functions</h2></td></tr>
 <p>advance example get flash information </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*output_buffer</td><td>points to an output buffer </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">*output_len</td><td>points to an output length buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*output_buffer</td><td>pointer to an output buffer </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">*output_len</td><td>pointer to an output length buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -900,9 +900,9 @@ Functions</h2></td></tr>
 <p>advance example high speed verify </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*found_page</td><td>points to a found page buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*score</td><td>points to a score buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*found_page</td><td>pointer to a found page buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*score</td><td>pointer to a score buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -952,9 +952,9 @@ Functions</h2></td></tr>
 <p>advance example identify </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*page_number</td><td>points to a page number buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*score</td><td>points to a score buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*page_number</td><td>pointer to a page number buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*score</td><td>pointer to a score buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -988,7 +988,7 @@ Functions</h2></td></tr>
 <p>advance example init </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
   </table>
   </dd>
 </dl>
@@ -1044,10 +1044,10 @@ Functions</h2></td></tr>
 <p>advance example input fingerprint </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*callback</td><td>points to a callback function </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*score</td><td>points to a score buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*page_number</td><td>points to a page number buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*callback</td><td>pointer to a callback function </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*score</td><td>pointer to a score buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*page_number</td><td>pointer to a page number buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1098,8 +1098,8 @@ Functions</h2></td></tr>
 <p>advance example get params </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*params</td><td>points to a param structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*params</td><td>pointer to a param structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1133,7 +1133,7 @@ Functions</h2></td></tr>
 <p>advance example print status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">status</td><td>is the print status </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">status</td><td>print status </td></tr>
   </table>
   </dd>
 </dl>
@@ -1177,8 +1177,8 @@ Functions</h2></td></tr>
 <p>advance example get random </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*randn</td><td>points to a random buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*randn</td><td>pointer to a random buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1228,9 +1228,9 @@ Functions</h2></td></tr>
 <p>advance example read notepad </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>is the page number </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*data</td><td>points to an output buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>page number </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*data</td><td>pointer to an output buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1286,10 +1286,10 @@ Functions</h2></td></tr>
 <p>advance example upload flash feature </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>is the page number </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*output_buffer</td><td>points to an output buffer </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">*output_len</td><td>points to an output length buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>page number </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*output_buffer</td><td>pointer to an output buffer </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">*output_len</td><td>pointer to an output length buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1339,9 +1339,9 @@ Functions</h2></td></tr>
 <p>advance example upload image </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*output_buffer</td><td>points to an output buffer </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">*output_len</td><td>points to an output length buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*output_buffer</td><td>pointer to an output buffer </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">*output_len</td><td>pointer to an output length buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1391,9 +1391,9 @@ Functions</h2></td></tr>
 <p>advance example upload image feature </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*output_buffer</td><td>points to an output buffer </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">*output_len</td><td>points to an output length buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*output_buffer</td><td>pointer to an output buffer </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">*output_len</td><td>pointer to an output length buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1443,9 +1443,9 @@ Functions</h2></td></tr>
 <p>advance example verify </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*found_page</td><td>points to a found page buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*score</td><td>points to a score buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*found_page</td><td>pointer to a found page buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*score</td><td>pointer to a score buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1495,9 +1495,9 @@ Functions</h2></td></tr>
 <p>advance example write notepad </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>is the page number </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*data</td><td>points to an input buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>page number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*data</td><td>pointer to an input buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1569,8 +1569,8 @@ Functions</h2></td></tr>
 <p>basic example delete fingerprint </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>is the page number </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>page number </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1604,7 +1604,7 @@ Functions</h2></td></tr>
 <p>basic example empty fingerprint </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1654,9 +1654,9 @@ Functions</h2></td></tr>
 <p>basic example high speed verify </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*found_page</td><td>points to a found page buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*score</td><td>points to a score buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*found_page</td><td>pointer to a found page buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*score</td><td>pointer to a score buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1690,7 +1690,7 @@ Functions</h2></td></tr>
 <p>basic example init </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
   </table>
   </dd>
 </dl>
@@ -1746,10 +1746,10 @@ Functions</h2></td></tr>
 <p>basic example input fingerprint </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*callback</td><td>points to a callback function </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*score</td><td>points to a score buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*page_number</td><td>points to a page number buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*callback</td><td>pointer to a callback function </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*score</td><td>pointer to a score buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*page_number</td><td>pointer to a page number buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1790,7 +1790,7 @@ Functions</h2></td></tr>
 <p>basic example print status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">status</td><td>is the print status </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">status</td><td>print status </td></tr>
   </table>
   </dd>
 </dl>
@@ -1840,9 +1840,9 @@ Functions</h2></td></tr>
 <p>basic example verify </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*found_page</td><td>points to a found page buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*score</td><td>points to a score buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*found_page</td><td>pointer to a found page buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*score</td><td>pointer to a score buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>

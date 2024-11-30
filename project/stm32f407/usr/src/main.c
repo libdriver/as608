@@ -63,8 +63,8 @@ volatile uint16_t g_len;               /**< uart buffer length */
 
 /**
  * @brief     input fingerprint callback
- * @param[in] status is the current status
- * @param[in] fmt is the format data
+ * @param[in] status current status
+ * @param[in] fmt format data
  * @note      none
  */
 static void a_callback(int8_t status, const char *const fmt, ...)
@@ -106,8 +106,8 @@ static void a_callback(int8_t status, const char *const fmt, ...)
 
 /**
  * @brief     as608 full function
- * @param[in] argc is arg numbers
- * @param[in] **argv is the arg address
+ * @param[in] argc arg numbers
+ * @param[in] **argv arg address
  * @return    status code
  *            - 0 success
  *            - 1 run failed

@@ -50,7 +50,7 @@ extern "C"{
 
 /**
  * @brief     fingerprint test
- * @param[in] addr is the chip address
+ * @param[in] addr chip address
  * @return    status code
  *            - 0 success
  *            - 1 test failed
