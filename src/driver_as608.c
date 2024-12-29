@@ -94,11 +94,11 @@
 
 /**
  * @brief     uart write data
- * @param[in] *handle points to an as608 handle structure
- * @param[in] addr is the set address
- * @param[in] type is the set type
- * @param[in] *buf points to an input buffer
- * @param[in] len is the buffer length
+ * @param[in] *handle pointer to an as608 handle structure
+ * @param[in] addr address
+ * @param[in] type command type
+ * @param[in] *buf pointer to an input buffer
+ * @param[in] len buffer length
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -150,11 +150,11 @@ static uint8_t a_as608_uart_write(as608_handle_t *handle, uint32_t addr, uint8_t
 
 /**
  * @brief         uart decode
- * @param[in]     *handle points to an as608 handle structure
- * @param[in]     ms is the delay in ms
- * @param[out]    *addr points to an address buffer
- * @param[out]    *buf points to an output buffer
- * @param[in,out] *len points to a buffer length buffer
+ * @param[in]     *handle pointer to an as608 handle structure
+ * @param[in]     ms delay in ms
+ * @param[out]    *addr pointer to an address buffer
+ * @param[out]    *buf pointer to an output buffer
+ * @param[in,out] *len pointer to a buffer length buffer
  * @return        status code
  *                - 0 success
  *                - 1 decode failed
@@ -237,12 +237,12 @@ static uint8_t a_as608_uart_decode(as608_handle_t *handle, uint32_t ms, uint32_t
 
 /**
  * @brief         uart decode with length
- * @param[in]     *handle points to an as608 handle structure
- * @param[in]     input_len is the input length
- * @param[in]     ms is the delay in ms
- * @param[out]    *addr points to an address buffer
- * @param[out]    *buf points to an output buffer
- * @param[in,out] *len points to a buffer length buffer
+ * @param[in]     *handle pointer to an as608 handle structure
+ * @param[in]     input_len input length
+ * @param[in]     ms delay in ms
+ * @param[out]    *addr pointer to an address buffer
+ * @param[out]    *buf pointer to an output buffer
+ * @param[in,out] *len pointer to a buffer length buffer
  * @return        status code
  *                - 0 success
  *                - 1 decode failed
@@ -332,13 +332,13 @@ static uint8_t a_as608_uart_decode_with_length(as608_handle_t *handle, uint16_t 
 
 /**
  * @brief         uart parse data
- * @param[in]     *handle points to an as608 handle structure
- * @param[in]     ms is the delay in ms
- * @param[out]    *addr points to an address buffer
- * @param[out]    *buf points to an output buffer
- * @param[in,out] *len points to a buffer length buffer
- * @param[out]    *end_enable points to an end bool buffer
- * @param[out]    *full_enable points to a full bool buffer
+ * @param[in]     *handle pointer to an as608 handle structure
+ * @param[in]     ms delay in ms
+ * @param[out]    *addr pointer to an address buffer
+ * @param[out]    *buf pointer to an output buffer
+ * @param[in,out] *len pointer to a buffer length buffer
+ * @param[out]    *end_enable pointer to an end bool buffer
+ * @param[out]    *full_enable pointer to a full bool buffer
  * @return        status code
  *                - 0 success
  *                - 1 parse data failed
@@ -452,8 +452,8 @@ static uint8_t a_as608_uart_parse_data(as608_handle_t *handle, uint32_t ms,uint3
 
 /**
  * @brief     initialize the chip
- * @param[in] *handle points to an as608 handle structure
- * @param[in] addr is the chip address
+ * @param[in] *handle pointer to an as608 handle structure
+ * @param[in] addr chip address
  * @return    status code
  *            - 0 success
  *            - 1 uart initialization failed
@@ -564,7 +564,7 @@ uint8_t as608_init(as608_handle_t *handle, uint32_t addr)
 
 /**
  * @brief     close the chip
- * @param[in] *handle points to an as608 handle structure
+ * @param[in] *handle pointer to an as608 handle structure
  * @return    status code
  *            - 0 success
  *            - 1 uart deinit failed
@@ -596,8 +596,8 @@ uint8_t as608_deinit(as608_handle_t *handle)
 
 /**
  * @brief      get the last status
- * @param[in]  *handle points to an as608 handle structure
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -622,9 +622,9 @@ uint8_t as608_get_last_status(as608_handle_t *handle, as608_status_t *status)
 
 /**
  * @brief      get image
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 get image failed
@@ -685,10 +685,10 @@ uint8_t as608_get_image(as608_handle_t *handle, uint32_t addr, as608_status_t *s
 
 /**
  * @brief      generate feature
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[in]  num is the buffer number
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[in]  num buffer number
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 generate feature failed
@@ -750,10 +750,10 @@ uint8_t as608_generate_feature(as608_handle_t *handle, uint32_t addr, as608_buff
 
 /**
  * @brief      match feature
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[out] *score points to a score buffer
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[out] *score pointer to a score buffer
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 match feature failed
@@ -815,14 +815,14 @@ uint8_t as608_match_feature(as608_handle_t *handle, uint32_t addr, uint16_t *sco
 
 /**
  * @brief      search feature
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[in]  num is the buffer num
- * @param[in]  start_page is the start page
- * @param[in]  page_number is the page number
- * @param[out] *found_page points to a found page buffer
- * @param[out] *score points to a score buffer
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[in]  num buffer num
+ * @param[in]  start_page start page
+ * @param[in]  page_number page number
+ * @param[out] *found_page pointer to a found page buffer
+ * @param[out] *score pointer to a score buffer
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 search feature failed
@@ -892,9 +892,9 @@ uint8_t as608_search_feature(as608_handle_t *handle, uint32_t addr, as608_buffer
 
 /**
  * @brief      combine feature
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 combine feature failed
@@ -955,11 +955,11 @@ uint8_t as608_combine_feature(as608_handle_t *handle, uint32_t addr, as608_statu
 
 /**
  * @brief      store feature
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[in]  num is the buffer num
- * @param[in]  page_number is the page number
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[in]  num buffer num
+ * @param[in]  page_number page number
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 store feature failed
@@ -1024,11 +1024,11 @@ uint8_t as608_store_feature(as608_handle_t *handle, uint32_t addr, as608_buffer_
 
 /**
  * @brief      load feature
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[in]  num is the buffer num
- * @param[in]  page_number is the page number
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[in]  num buffer num
+ * @param[in]  page_number page number
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 load feature failed
@@ -1093,12 +1093,12 @@ uint8_t as608_load_feature(as608_handle_t *handle, uint32_t addr, as608_buffer_n
 
 /**
  * @brief         upload feature
- * @param[in]     *handle points to an as608 handle structure
- * @param[in]     addr is the chip address
- * @param[in]     num is the buffer num
- * @param[out]    *output_buffer points to an output buffer
- * @param[in,out] *output_len points to an output length buffer
- * @param[out]    *status points to a status buffer
+ * @param[in]     *handle pointer to an as608 handle structure
+ * @param[in]     addr chip address
+ * @param[in]     num buffer num
+ * @param[out]    *output_buffer pointer to an output buffer
+ * @param[in,out] *output_len pointer to an output length buffer
+ * @param[out]    *status pointer to a status buffer
  * @return        status code
  *                - 0 success
  *                - 1 upload feature failed
@@ -1201,12 +1201,12 @@ uint8_t as608_upload_feature(as608_handle_t *handle, uint32_t addr, as608_buffer
 
 /**
  * @brief      download feature
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[in]  num is the buffer num
- * @param[in]  *input_buffer points to an input buffer
- * @param[in]  input_len is the input length
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[in]  num buffer num
+ * @param[in]  *input_buffer pointer to an input buffer
+ * @param[in]  input_len input length
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 download feature failed
@@ -1326,11 +1326,11 @@ uint8_t as608_download_feature(as608_handle_t *handle, uint32_t addr, as608_buff
 
 /**
  * @brief         upload image
- * @param[in]     *handle points to an as608 handle structure
- * @param[in]     addr is the chip address
- * @param[out]    *output_buffer points to an output buffer
- * @param[in,out] *output_len points to an output length buffer
- * @param[out]    *status points to a status buffer
+ * @param[in]     *handle pointer to an as608 handle structure
+ * @param[in]     addr chip address
+ * @param[out]    *output_buffer pointer to an output buffer
+ * @param[in,out] *output_len pointer to an output length buffer
+ * @param[out]    *status pointer to a status buffer
  * @return        status code
  *                - 0 success
  *                - 1 upload image failed
@@ -1432,11 +1432,11 @@ uint8_t as608_upload_image(as608_handle_t *handle, uint32_t addr, uint8_t *outpu
 
 /**
  * @brief      download image
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[in]  *input_buffer points to an input buffer
- * @param[in]  input_len is the input length
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[in]  *input_buffer pointer to an input buffer
+ * @param[in]  input_len input length
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 download image failed
@@ -1555,11 +1555,11 @@ uint8_t as608_download_image(as608_handle_t *handle, uint32_t addr, uint8_t *inp
 
 /**
  * @brief      delete feature
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[in]  page_number is the page number
- * @param[in]  number is the deleted number
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[in]  page_number page number
+ * @param[in]  number deleted number
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 delete feature failed
@@ -1624,9 +1624,9 @@ uint8_t as608_delete_feature(as608_handle_t *handle, uint32_t addr, uint16_t pag
 
 /**
  * @brief      empty all feature
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 empty all feature failed
@@ -1687,10 +1687,10 @@ uint8_t as608_empty_all_feature(as608_handle_t *handle, uint32_t addr, as608_sta
 
 /**
  * @brief      set baud rate
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[in]  n_9600 is the n times of 9600
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[in]  n_9600 n times of 9600
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 set baud rate failed
@@ -1753,10 +1753,10 @@ uint8_t as608_set_baud_rate(as608_handle_t *handle, uint32_t addr, uint8_t n_960
 
 /**
  * @brief      set level
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[in]  level is the set level
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[in]  level input level
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 set level failed
@@ -1819,10 +1819,10 @@ uint8_t as608_set_level(as608_handle_t *handle, uint32_t addr, as608_level_t lev
 
 /**
  * @brief      set packet size
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[in]  size is the set packet size
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[in]  size packet size
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 set packet size failed
@@ -1887,10 +1887,10 @@ uint8_t as608_set_packet_size(as608_handle_t *handle, uint32_t addr, as608_packe
 
 /**
  * @brief      get params
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[out] *param points to a param structure
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[out] *param pointer to a param structure
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 get params failed
@@ -1964,10 +1964,10 @@ uint8_t as608_get_params(as608_handle_t *handle, uint32_t addr, as608_params_t *
 
 /**
  * @brief      enroll
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[out] *page_number points to a page number buffer
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[out] *page_number pointer to a page number buffer
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 enroll failed
@@ -2029,11 +2029,11 @@ uint8_t as608_enroll(as608_handle_t *handle, uint32_t addr, uint16_t *page_numbe
 
 /**
  * @brief      identify
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[out] *page_number points to a page number buffer
- * @param[out] *score points to a score buffer
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[out] *page_number pointer to a page number buffer
+ * @param[out] *score pointer to a score buffer
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 identify failed
@@ -2096,10 +2096,10 @@ uint8_t as608_identify(as608_handle_t *handle, uint32_t addr, uint16_t *page_num
 
 /**
  * @brief      set password
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[in]  password is the set password
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[in]  password set password
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 set password failed
@@ -2164,10 +2164,10 @@ uint8_t as608_set_password(as608_handle_t *handle, uint32_t addr, uint32_t passw
 
 /**
  * @brief      verify password
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[in]  password is the verify password
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[in]  password verify password
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 verify password failed
@@ -2232,10 +2232,10 @@ uint8_t as608_verify_password(as608_handle_t *handle, uint32_t addr, uint32_t pa
 
 /**
  * @brief      get random
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[out] *randn points to a random buffer
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[out] *randn pointer to a random buffer
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 get random failed
@@ -2300,10 +2300,10 @@ uint8_t as608_get_random(as608_handle_t *handle, uint32_t addr, uint32_t *randn,
 
 /**
  * @brief      set the chip address
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[in ] new_addr is the new address
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[in ] new_addr new address
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 set chip address failed
@@ -2368,11 +2368,11 @@ uint8_t as608_set_chip_address(as608_handle_t *handle, uint32_t addr, uint32_t n
 
 /**
  * @brief         get flash information
- * @param[in]     *handle points to an as608 handle structure
- * @param[in]     addr is the chip address
- * @param[out]    *output_buffer points to an output buffer
- * @param[in,out] *output_len points to an output length buffer
- * @param[out]    *status points to a status buffer
+ * @param[in]     *handle pointer to an as608 handle structure
+ * @param[in]     addr chip address
+ * @param[out]    *output_buffer pointer to an output buffer
+ * @param[in,out] *output_len pointer to an output length buffer
+ * @param[out]    *status pointer to a status buffer
  * @return        status code
  *                - 0 success
  *                - 1 get flash information failed
@@ -2474,10 +2474,10 @@ uint8_t as608_get_flash_information(as608_handle_t *handle, uint32_t addr,
 
 /**
  * @brief      enable or disable port
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[in ] enable is a bool value
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[in ] enable bool value
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 set port failed
@@ -2539,11 +2539,11 @@ uint8_t as608_set_port(as608_handle_t *handle, uint32_t addr, as608_bool_t enabl
 
 /**
  * @brief      write notepad
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[in]  page_number is the page number
- * @param[in]  *data points to an input buffer
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[in]  page_number page number
+ * @param[in]  *data pointer to an input buffer
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 write notepad failed
@@ -2613,11 +2613,11 @@ uint8_t as608_write_notepad(as608_handle_t *handle, uint32_t addr, uint8_t page_
 
 /**
  * @brief      read notepad
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[in]  page_number is the page number
- * @param[out] *data points to an output buffer
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[in]  page_number page number
+ * @param[out] *data pointer to an output buffer
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 read notepad failed
@@ -2687,12 +2687,12 @@ uint8_t as608_read_notepad(as608_handle_t *handle, uint32_t addr, uint8_t page_n
 
 /**
  * @brief      burn code
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[in]  mode is the burn mode
- * @param[in]  *input_buffer points to an input buffer
- * @param[in]  input_len is the input length
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[in]  mode burn mode
+ * @param[in]  *input_buffer pointer to an input buffer
+ * @param[in]  input_len input length
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 burn code failed
@@ -2812,14 +2812,14 @@ uint8_t as608_burn_code(as608_handle_t *handle, uint32_t addr, as608_burn_code_m
 
 /**
  * @brief      high speed search
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[in]  buffer_number is the buffer number
- * @param[in]  start_page is the start page
- * @param[in]  page_number is the page number
- * @param[out] *found_page points to a found page buffer
- * @param[out] *score points to a score buffer
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[in]  buffer_number buffer number
+ * @param[in]  start_page start page
+ * @param[in]  page_number page number
+ * @param[out] *found_page pointer to a found page buffer
+ * @param[out] *score pointer to a score buffer
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 high speed search failed
@@ -2890,10 +2890,10 @@ uint8_t as608_high_speed_search(as608_handle_t *handle, uint32_t addr, as608_buf
 
 /**
  * @brief      generate bin image
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[in]  image is the image type
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[in]  image image type
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 generate bin image failed
@@ -2955,10 +2955,10 @@ uint8_t as608_generate_bin_image(as608_handle_t *handle, uint32_t addr, as608_im
 
 /**
  * @brief      get valid template number
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[out] *num points to a number buffer
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[out] *num pointer to a number buffer
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 get valid template number failed
@@ -3020,12 +3020,12 @@ uint8_t as608_get_valid_template_number(as608_handle_t *handle, uint32_t addr, u
 
 /**
  * @brief      set gpio level
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[in]  gpio is the gpio number
- * @param[in]  input_level is the input level
- * @param[out] *output_level points to an output level buffer
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[in]  gpio gpio number
+ * @param[in]  input_level input level
+ * @param[out] *output_level pointer to an output level buffer
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 set gpio level failed
@@ -3090,11 +3090,11 @@ uint8_t as608_set_gpio_level(as608_handle_t *handle, uint32_t addr, as608_gpio_n
 
 /**
  * @brief      get index table
- * @param[in]  *handle points to an as608 handle structure
- * @param[in]  addr is the chip address
- * @param[in]  num is the index number
- * @param[out] *table points to a table buffer
- * @param[out] *status points to a status buffer
+ * @param[in]  *handle pointer to an as608 handle structure
+ * @param[in]  addr chip address
+ * @param[in]  num index number
+ * @param[out] *table pointer to a table buffer
+ * @param[out] *status pointer to a status buffer
  * @return     status code
  *             - 0 success
  *             - 1 get index table failed
@@ -3165,8 +3165,8 @@ uint8_t as608_get_index_table(as608_handle_t *handle, uint32_t addr, uint8_t num
 
 /**
  * @brief     print status
- * @param[in] *handle points to an as608 handle structure
- * @param[in] status is the print status
+ * @param[in] *handle pointer to an as608 handle structure
+ * @param[in] status print status
  * @return    status code
  *             - 0 success
  *             - 2 handle is NULL
@@ -3433,14 +3433,14 @@ uint8_t as608_print_status(as608_handle_t *handle, as608_status_t status)
 
 /**
  * @brief         write read data to chip
- * @param[in]     *handle points to an as608 handle structure
- * @param[in]     addr is the chip address
- * @param[in]     type is the frame type
- * @param[in]     *input_buffer points to an input buffer
- * @param[in]     input_len is the input length
- * @param[in]     ms is the delay in ms
- * @param[out]    *output_buffer points to an output buffer
- * @param[in,out] *output_len points to an output length buffer
+ * @param[in]     *handle pointer to an as608 handle structure
+ * @param[in]     addr chip address
+ * @param[in]     type frame type
+ * @param[in]     *input_buffer pointer to an input buffer
+ * @param[in]     input_len input length
+ * @param[in]     ms delay in ms
+ * @param[out]    *output_buffer pointer to an output buffer
+ * @param[in,out] *output_len pointer to an output length buffer
  * @return        status code
  *                - 0 success
  *                - 1 command write read failed
@@ -3490,7 +3490,7 @@ uint8_t as608_command_write_read(as608_handle_t *handle, uint32_t addr, uint8_t 
 
 /**
  * @brief      get chip's information
- * @param[out] *info points to an as608 info structure
+ * @param[out] *info pointer to an as608 info structure
  * @return     status code
  *             - 0 success
  *             - 2 handle is NULL

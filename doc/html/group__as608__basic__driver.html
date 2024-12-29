@@ -792,12 +792,12 @@ Functions</h2></td></tr>
 <p>burn code </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>is the burn mode </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*input_buffer</td><td>points to an input buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">input_len</td><td>is the input length </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>burn mode </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*input_buffer</td><td>pointer to an input buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">input_len</td><td>input length </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -852,9 +852,9 @@ Functions</h2></td></tr>
 <p>combine feature </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -893,7 +893,7 @@ Functions</h2></td></tr>
 <p>close the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -957,11 +957,11 @@ Functions</h2></td></tr>
 <p>delete feature </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>is the page number </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">number</td><td>is the deleted number </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>page number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">number</td><td>deleted number </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1034,12 +1034,12 @@ Functions</h2></td></tr>
 <p>download feature </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>is the buffer num </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*input_buffer</td><td>points to an input buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">input_len</td><td>is the input length </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>buffer num </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*input_buffer</td><td>pointer to an input buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">input_len</td><td>input length </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1106,11 +1106,11 @@ Functions</h2></td></tr>
 <p>download image </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*input_buffer</td><td>points to an input buffer </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">input_len</td><td>is the input length </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*input_buffer</td><td>pointer to an input buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">input_len</td><td>input length </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1165,9 +1165,9 @@ Functions</h2></td></tr>
 <p>empty all feature </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1228,10 +1228,10 @@ Functions</h2></td></tr>
 <p>enroll </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*page_number</td><td>points to a page number buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*page_number</td><td>pointer to a page number buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1292,10 +1292,10 @@ Functions</h2></td></tr>
 <p>generate bin image </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td>is the image type </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">image</td><td>image type </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1356,10 +1356,10 @@ Functions</h2></td></tr>
 <p>generate feature </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>is the buffer number </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>buffer number </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1426,11 +1426,11 @@ Functions</h2></td></tr>
 <p>get flash information </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*output_buffer</td><td>points to an output buffer </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">*output_len</td><td>points to an output length buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*output_buffer</td><td>pointer to an output buffer </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">*output_len</td><td>pointer to an output length buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1486,9 +1486,9 @@ Functions</h2></td></tr>
 <p>get image </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1555,11 +1555,11 @@ Functions</h2></td></tr>
 <p>get index table </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>is the index number </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*table</td><td>points to a table buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>index number </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*table</td><td>pointer to a table buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1609,8 +1609,8 @@ Functions</h2></td></tr>
 <p>get the last status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1667,10 +1667,10 @@ Functions</h2></td></tr>
 <p>get params </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*param</td><td>points to a param structure </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*param</td><td>pointer to a param structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1731,10 +1731,10 @@ Functions</h2></td></tr>
 <p>get random </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*randn</td><td>points to a random buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*randn</td><td>pointer to a random buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1795,10 +1795,10 @@ Functions</h2></td></tr>
 <p>get valid template number </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*num</td><td>points to a number buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*num</td><td>pointer to a number buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1883,14 +1883,14 @@ Functions</h2></td></tr>
 <p>high speed search </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">buffer_number</td><td>is the buffer number </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">start_page</td><td>is the start page </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>is the page number </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*found_page</td><td>points to a found page buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*score</td><td>points to a score buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer_number</td><td>buffer number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">start_page</td><td>start page </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>page number </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*found_page</td><td>pointer to a found page buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*score</td><td>pointer to a score buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -1957,11 +1957,11 @@ Functions</h2></td></tr>
 <p>identify </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*page_number</td><td>points to a page number buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*score</td><td>points to a score buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*page_number</td><td>pointer to a page number buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*score</td><td>pointer to a score buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2000,7 +2000,7 @@ Functions</h2></td></tr>
 <p>get chip's information </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>points to an as608 info structure </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*info</td><td>pointer to an as608 info structure </td></tr>
   </table>
   </dd>
 </dl>
@@ -2044,8 +2044,8 @@ Functions</h2></td></tr>
 <p>initialize the chip </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
   </table>
   </dd>
 </dl>
@@ -2110,11 +2110,11 @@ Functions</h2></td></tr>
 <p>load feature </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>is the buffer num </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>is the page number </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>buffer num </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>page number </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2175,10 +2175,10 @@ Functions</h2></td></tr>
 <p>match feature </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*score</td><td>points to a score buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*score</td><td>pointer to a score buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2227,8 +2227,8 @@ Functions</h2></td></tr>
 <p>print status </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">status</td><td>is the print status </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">status</td><td>print status </td></tr>
   </table>
   </dd>
 </dl>
@@ -2291,11 +2291,11 @@ Functions</h2></td></tr>
 <p>read notepad </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>is the page number </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*data</td><td>points to an output buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>page number </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*data</td><td>pointer to an output buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2381,14 +2381,14 @@ Functions</h2></td></tr>
 <p>search feature </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>is the buffer num </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">start_page</td><td>is the start page </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>is the page number </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*found_page</td><td>points to a found page buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*score</td><td>points to a score buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>buffer num </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">start_page</td><td>start page </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>page number </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*found_page</td><td>pointer to a found page buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*score</td><td>pointer to a score buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2449,10 +2449,10 @@ Functions</h2></td></tr>
 <p>set baud rate </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">n_9600</td><td>is the n times of 9600 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n_9600</td><td>n times of 9600 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2513,10 +2513,10 @@ Functions</h2></td></tr>
 <p>set the chip address </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">new_addr</td><td>is the new address </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_addr</td><td>new address </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2589,12 +2589,12 @@ Functions</h2></td></tr>
 <p>set gpio level </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">gpio</td><td>is the gpio number </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">input_level</td><td>is the input level </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*output_level</td><td>points to an output level buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gpio</td><td>gpio number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">input_level</td><td>input level </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*output_level</td><td>pointer to an output level buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2655,10 +2655,10 @@ Functions</h2></td></tr>
 <p>set level </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>is the set level </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>input level </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2719,10 +2719,10 @@ Functions</h2></td></tr>
 <p>set packet size </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>is the set packet size </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>packet size </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2783,10 +2783,10 @@ Functions</h2></td></tr>
 <p>set password </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">password</td><td>is the set password </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">password</td><td>set password </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2847,10 +2847,10 @@ Functions</h2></td></tr>
 <p>enable or disable port </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>is a bool value </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>bool value </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2917,11 +2917,11 @@ Functions</h2></td></tr>
 <p>store feature </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>is the buffer num </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>is the page number </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>buffer num </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>page number </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -2994,12 +2994,12 @@ Functions</h2></td></tr>
 <p>upload feature </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>is the buffer num </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*output_buffer</td><td>points to an output buffer </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">*output_len</td><td>points to an output length buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num</td><td>buffer num </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*output_buffer</td><td>pointer to an output buffer </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">*output_len</td><td>pointer to an output length buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3067,11 +3067,11 @@ Functions</h2></td></tr>
 <p>upload image </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*output_buffer</td><td>points to an output buffer </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">*output_len</td><td>points to an output length buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*output_buffer</td><td>pointer to an output buffer </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">*output_len</td><td>pointer to an output length buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3133,10 +3133,10 @@ Functions</h2></td></tr>
 <p>verify password </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">password</td><td>is the verify password </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">password</td><td>verify password </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -3203,11 +3203,11 @@ Functions</h2></td></tr>
 <p>write notepad </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>points to an as608 handle structure </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>is the chip address </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>is the page number </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*data</td><td>points to an input buffer </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>points to a status buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*handle</td><td>pointer to an as608 handle structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>chip address </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">page_number</td><td>page number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">*data</td><td>pointer to an input buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*status</td><td>pointer to a status buffer </td></tr>
   </table>
   </dd>
 </dl>

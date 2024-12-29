@@ -74,8 +74,8 @@ uint8_t as608_interface_uart_deinit(void)
 
 /**
  * @brief      interface uart read
- * @param[out] *buf points to a data buffer
- * @param[in]  len is the length of the data buffer
+ * @param[out] *buf pointer to a data buffer
+ * @param[in]  len length of the data buffer
  * @return     status code
  *             - 0 success
  *             - 1 read failed
@@ -109,8 +109,8 @@ uint8_t as608_interface_uart_flush(void)
 
 /**
  * @brief     interface uart write
- * @param[in] *buf points to a data buffer
- * @param[in] len is the length of the data buffer
+ * @param[in] *buf pointer to a data buffer
+ * @param[in] len length of the data buffer
  * @return    status code
  *            - 0 success
  *            - 1 write failed
@@ -123,7 +123,7 @@ uint8_t as608_interface_uart_write(uint8_t *buf, uint16_t len)
 
 /**
  * @brief     interface delay ms
- * @param[in] ms
+ * @param[in] ms time
  * @note      none
  */
 void as608_interface_delay_ms(uint32_t ms)
@@ -133,7 +133,7 @@ void as608_interface_delay_ms(uint32_t ms)
 
 /**
  * @brief     interface print format data
- * @param[in] fmt is the format data
+ * @param[in] fmt format data
  * @note      none
  */
 void as608_interface_debug_print(const char *const fmt, ...)

@@ -42,7 +42,7 @@ static uint8_t gs_output_buffer[512];       /**< test buffer */
 
 /**
  * @brief     register test
- * @param[in] addr is the chip address
+ * @param[in] addr chip address
  * @return    status code
  *            - 0 success
  *            - 1 test failed
