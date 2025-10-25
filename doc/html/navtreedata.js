@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "LibDriver AS608", "index.html", [
-    [ "Modules", "modules.html", "modules" ],
+    [ "Topics", "topics.html", "topics" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -51,9 +51,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"group__as608__basic__driver.html#gga28c1b6e96cee9a887045faeb1eba7ce3a3378c32a4c7c01c0ddce37af11d0821c",
-"group__as608__interface__driver.html#ga7e28e5a1168028db3e03098750171791"
+"group__as608__example__driver.html#gadc332c68ae43a8e81e456f50475ba9eb"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';
+var LISTOFALLMEMBERS = 'List of all members';

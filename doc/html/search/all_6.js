@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['level_249',['level',['../structas608__params__s.html#a57b3ab743677dfa7044f14c0c845f2c2',1,'as608_params_s']]],
-  ['libdriver_20as608_250',['LibDriver AS608',['../index.html',1,'']]]
+  ['inited_0',['inited',['../structas608__handle__s.html#a19bedf28d2b9748f6a62d9ae93f4e68f',1,'as608_handle_s']]],
+  ['interface_1',['interface',['../structas608__info__s.html#aebaa6c28dd4f2c3dc27566fcb910fd28',1,'as608_info_s']]],
+  ['interface_20driver_20function_2',['as608 interface driver function',['../group__as608__interface__driver.html',1,'']]]
 ];

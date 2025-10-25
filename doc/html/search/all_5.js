@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['inited_247',['inited',['../structas608__handle__s.html#a19bedf28d2b9748f6a62d9ae93f4e68f',1,'as608_handle_s']]],
-  ['interface_248',['interface',['../structas608__info__s.html#aebaa6c28dd4f2c3dc27566fcb910fd28',1,'as608_info_s']]]
+  ['fingerprint_5fsize_0',['fingerprint_size',['../structas608__params__s.html#ad3f64da6c71ed1c91024ce498df33346',1,'as608_params_s']]],
+  ['function_1',['function',['../group__as608__basic__driver.html',1,'as608 basic driver function'],['../group__as608__driver.html',1,'as608 driver function'],['../group__as608__example__driver.html',1,'as608 example driver function'],['../group__as608__extern__driver.html',1,'as608 extern driver function'],['../group__as608__interface__driver.html',1,'as608 interface driver function'],['../group__as608__link__driver.html',1,'as608 link driver function'],['../group__as608__test__driver.html',1,'as608 test driver function']]]
 ];
