@@ -10,7 +10,7 @@
 
 AS608 is a fingerprint scanner and reader module but does more than that like fingerprint enrollment, image processing, print matching and many more. It processes the data and sends processed data to the microcontroller through serial. The device uses a DSP chip that does image rendering, feature finding, calculation and searching. It has an in-built flash memory that stores the data of fingerprint and enrolls new – up to 300 fingerprints can be stored. It interfaces with the controller or any other system with TTL serial and sends packets of data to take photos, detects print, hash, and search. The device has a red and green LED light indication for the wrong and right prints. 
 
-LibDriver AS608 is a full-featured driver of AS608 launched by LibDriver.It provides fingerprint registration, fingerprint verification and other functions. LibDriver is MISRA compliant.
+LibDriver AS608 is a full-featured driver for AS608, launched by LibDriver.It provides fingerprint registration, fingerprint verification and additional features. LibDriver is MISRA compliant.
 
 ### Table of Contents
 
