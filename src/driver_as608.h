@@ -875,7 +875,7 @@ uint8_t as608_set_port(as608_handle_t *handle, uint32_t addr, as608_bool_t enabl
  *             - 4 decode failed
  *             - 5 addr is invalid
  *             - 6 len is invalid
- *             - 7 page_number > 16
+ *             - 7 page_number > 15
  * @note       0 <= page_number <= 15
  */
 uint8_t as608_write_notepad(as608_handle_t *handle, uint32_t addr, uint8_t page_number, uint8_t data[32], as608_status_t *status);
@@ -895,7 +895,7 @@ uint8_t as608_write_notepad(as608_handle_t *handle, uint32_t addr, uint8_t page_
  *             - 4 decode failed
  *             - 5 addr is invalid
  *             - 6 len is invalid
- *             - 7 page_number > 16
+ *             - 7 page_number > 15
  * @note       0 <= page_number <= 15
  */
 uint8_t as608_read_notepad(as608_handle_t *handle, uint32_t addr, uint8_t page_number, uint8_t data[32], as608_status_t *status);
