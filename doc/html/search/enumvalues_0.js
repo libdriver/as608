@@ -30,7 +30,7 @@ var searchData=
   ['as608_5fstatus_5fbuffer_5finvalid_27',['AS608_STATUS_BUFFER_INVALID',['../group__as608__basic__driver.html#gga28c1b6e96cee9a887045faeb1eba7ce3a3378c32a4c7c01c0ddce37af11d0821c',1,'driver_as608.h']]],
   ['as608_5fstatus_5fcommand_5finvalid_28',['AS608_STATUS_COMMAND_INVALID',['../group__as608__basic__driver.html#gga28c1b6e96cee9a887045faeb1eba7ce3ab0e21bd9ce400c3f9b7f94bc74a15336',1,'driver_as608.h']]],
   ['as608_5fstatus_5fdata_5finvalid_29',['AS608_STATUS_DATA_INVALID',['../group__as608__basic__driver.html#gga28c1b6e96cee9a887045faeb1eba7ce3a324e11dab2e365bd2779ac4b61fafe33',1,'driver_as608.h']]],
-  ['as608_5fstatus_5fenrool_5ferror_30',['AS608_STATUS_ENROOL_ERROR',['../group__as608__basic__driver.html#gga28c1b6e96cee9a887045faeb1eba7ce3aaa0476fbe24591e63e8faafbc2567508',1,'driver_as608.h']]],
+  ['as608_5fstatus_5fenroll_5ferror_30',['AS608_STATUS_ENROLL_ERROR',['../group__as608__basic__driver.html#gga28c1b6e96cee9a887045faeb1eba7ce3a93c8aaf91a2e56383b62d7a2965ef1ae',1,'driver_as608.h']]],
   ['as608_5fstatus_5fenter_5flow_5fpower_5ferror_31',['AS608_STATUS_ENTER_LOW_POWER_ERROR',['../group__as608__basic__driver.html#gga28c1b6e96cee9a887045faeb1eba7ce3ab7d1e85d45aae4373343d913a17ad2b2',1,'driver_as608.h']]],
   ['as608_5fstatus_5ff0_5fresponse_32',['AS608_STATUS_F0_RESPONSE',['../group__as608__basic__driver.html#gga28c1b6e96cee9a887045faeb1eba7ce3a3deff12fe151e78f3bc2858146862b88',1,'driver_as608.h']]],
   ['as608_5fstatus_5ff1_5fresponse_33',['AS608_STATUS_F1_RESPONSE',['../group__as608__basic__driver.html#gga28c1b6e96cee9a887045faeb1eba7ce3a4762cbf0a8a594e46d37caa5ae2fbee8',1,'driver_as608.h']]],

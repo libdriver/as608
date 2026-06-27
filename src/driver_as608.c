@@ -205,7 +205,7 @@ static uint8_t a_as608_uart_decode(as608_handle_t *handle, uint32_t ms, uint32_t
             
             return 4;                                                                          /* return error */
         }
-        if ((handle->buf[0] != 0xEF) && (handle->buf[1] != 0x01))                              /* check header */
+        if ((handle->buf[0] != 0xEF) || (handle->buf[1] != 0x01))                              /* check header */
         {
             handle->debug_print("as608: header is invalid.\n");                                /* header is invalid */
             
@@ -300,7 +300,7 @@ static uint8_t a_as608_uart_decode_with_length(as608_handle_t *handle, uint16_t 
             
             return 4;                                                                          /* return error */
         }
-        if ((handle->buf[0] != 0xEF) && (handle->buf[1] != 0x01))                              /* check header */
+        if ((handle->buf[0] != 0xEF) || (handle->buf[1] != 0x01))                              /* check header */
         {
             handle->debug_print("as608: header is invalid.\n");                                /* header is invalid */
             
@@ -404,7 +404,7 @@ static uint8_t a_as608_uart_parse_data(as608_handle_t *handle, uint32_t ms,uint3
             
             return 4;                                                                          /* return error */
         }
-        if ((handle->buf[0] != 0xEF) && (handle->buf[1] != 0x01))                              /* check header */
+        if ((handle->buf[0] != 0xEF) || (handle->buf[1] != 0x01))                              /* check header */
         {
             handle->debug_print("as608: header is invalid.\n");                                /* header is invalid */
             
@@ -2022,7 +2022,7 @@ uint8_t as608_enroll(as608_handle_t *handle, uint32_t addr, uint16_t *page_numbe
     }
     handle->status = buf[0];                                                   /* save status */
     *status = (as608_status_t)handle->status;                                  /* set status */
-    *page_number = (uint16_t)((uint16_t)buf[1]) | buf[2];                      /* set page number */
+    *page_number = (uint16_t)((uint16_t)buf[1] << 8) | buf[2];                 /* set page number */
     
     return 0;                                                                  /* success return 0 */
 }
@@ -2088,8 +2088,8 @@ uint8_t as608_identify(as608_handle_t *handle, uint32_t addr, uint16_t *page_num
     }
     handle->status = buf[0];                                                   /* save status */
     *status = (as608_status_t)handle->status;                                  /* set status */
-    *page_number = (uint16_t)((uint16_t)buf[1]) | buf[2];                      /* set page number */
-    *score = (uint16_t)((uint16_t)buf[3]) | buf[4];                            /* set score */
+    *page_number = (uint16_t)((uint16_t)buf[1] << 8) | buf[2];                 /* set page number */
+    *score = (uint16_t)((uint16_t)buf[3] << 8) | buf[4];                       /* set score */
     
     return 0;                                                                  /* success return 0 */
 }
@@ -3408,9 +3408,9 @@ uint8_t as608_print_status(as608_handle_t *handle, as608_status_t status)
             
             break;                                                               /* break */
         }
-        case AS608_STATUS_ENROOL_ERROR :                                         /* status case */
+        case AS608_STATUS_ENROLL_ERROR :                                         /* status case */
         {
-            handle->debug_print("as608: enrool error.\n");                       /* print message */
+            handle->debug_print("as608: enroll error.\n");                       /* print message */
             
             break;                                                               /* break */
         }
