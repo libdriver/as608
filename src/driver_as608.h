@@ -188,7 +188,7 @@ typedef enum
     AS608_STATUS_DATA_INVALID                = 0x1B,        /**< data invalid */
     AS608_STATUS_NOTE_PAGE_INVALID           = 0x1C,        /**< note page invalid */
     AS608_STATUS_PORT_INVALID                = 0x1D,        /**< port invalid */
-    AS608_STATUS_ENROOL_ERROR                = 0x1E,        /**< enrool error */
+    AS608_STATUS_ENROLL_ERROR                = 0x1E,        /**< enroll error */
     AS608_STATUS_LIB_FULL                    = 0x1F,        /**< lib full */
 } as608_status_t;
 

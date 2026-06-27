@@ -119,7 +119,7 @@ var group__as608__basic__driver =
       [ "AS608_STATUS_DATA_INVALID", "group__as608__basic__driver.html#gga28c1b6e96cee9a887045faeb1eba7ce3a324e11dab2e365bd2779ac4b61fafe33", null ],
       [ "AS608_STATUS_NOTE_PAGE_INVALID", "group__as608__basic__driver.html#gga28c1b6e96cee9a887045faeb1eba7ce3ad5e454658f93ca9c6e19aa6a0f5f94f5", null ],
       [ "AS608_STATUS_PORT_INVALID", "group__as608__basic__driver.html#gga28c1b6e96cee9a887045faeb1eba7ce3a6b5673436354a2d4d09c75d3171411f2", null ],
-      [ "AS608_STATUS_ENROOL_ERROR", "group__as608__basic__driver.html#gga28c1b6e96cee9a887045faeb1eba7ce3aaa0476fbe24591e63e8faafbc2567508", null ],
+      [ "AS608_STATUS_ENROLL_ERROR", "group__as608__basic__driver.html#gga28c1b6e96cee9a887045faeb1eba7ce3a93c8aaf91a2e56383b62d7a2965ef1ae", null ],
       [ "AS608_STATUS_LIB_FULL", "group__as608__basic__driver.html#gga28c1b6e96cee9a887045faeb1eba7ce3aff47b572d2b7760d3f16d420edb65229", null ]
     ] ],
     [ "as608_burn_code", "group__as608__basic__driver.html#gad28784203f6896de5e5f860c86cb7ee2", null ],
