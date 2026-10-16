@@ -370,7 +370,7 @@ static uint8_t a_as608_uart_parse_data(as608_handle_t *handle, uint32_t ms,uint3
             return 2;                                                                          /* return error */
         }
         l = (uint16_t)(((uint16_t)handle->buf[7]) << 8) | handle->buf[8];                      /* get length */
-        if (l > 256)
+        if (l > 258)                                                                           /* check range */
         {
             handle->debug_print("as608: len is invalid.\n");                                   /* len is invalid */
             

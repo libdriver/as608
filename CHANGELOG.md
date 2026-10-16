@@ -1,3 +1,9 @@
+## 1.0.10 (2026-10-17)
+
+## Bug Fixes
+
+- fix frame bugs
+
 ## 1.0.9 (2026-06-27)
 
 ## Bug Fixes
